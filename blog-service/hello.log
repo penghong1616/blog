@@ -1,0 +1,39 @@
+INFO 2020 九月 16 10:48:49,619 main LogTest - Hello,World!!
+DEBUG 2020 九月 16 10:55:42,175 main org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@380fb434
+DEBUG 2020 九月 16 10:55:42,369 main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\project\idea\blog\blog-service\target\classes\com\ph\UserService.class]
+DEBUG 2020 九月 16 10:55:42,391 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 7 bean definitions from class path resource [applicationContext.xml]
+DEBUG 2020 九月 16 10:55:42,410 main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG 2020 九月 16 10:55:42,453 main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+DEBUG 2020 九月 16 10:55:42,455 main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+DEBUG 2020 九月 16 10:55:42,457 main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG 2020 九月 16 10:55:42,457 main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG 2020 九月 16 10:55:42,460 main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+DEBUG 2020 九月 16 10:55:42,524 main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userService'
+INFO 2020 九月 16 10:55:42,540 main com.ph.UserService - 1进行登录
+INFO 2020 九月 16 11:08:37,401 main LogTest - Hello,World!!
+DEBUG 2020 九月 16 11:38:37,253 main org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6e3c1e69
+DEBUG 2020 九月 16 11:38:37,445 main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\project\idea\blog\blog-service\target\classes\com\ph\listener\AppListener.class]
+DEBUG 2020 九月 16 11:38:37,449 main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\project\idea\blog\blog-service\target\classes\com\ph\service\UserService.class]
+DEBUG 2020 九月 16 11:38:37,471 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 8 bean definitions from class path resource [applicationContext.xml]
+DEBUG 2020 九月 16 11:38:37,492 main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG 2020 九月 16 11:38:37,536 main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+DEBUG 2020 九月 16 11:38:37,538 main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+DEBUG 2020 九月 16 11:38:37,540 main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG 2020 九月 16 11:38:37,541 main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG 2020 九月 16 11:38:37,544 main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+DEBUG 2020 九月 16 11:38:37,606 main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'appListener'
+DEBUG 2020 九月 16 11:38:37,618 main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userService'
+INFO 2020 九月 16 11:38:37,632 main com.ph.service.UserService - 1进行登录
+DEBUG 2020 九月 16 11:39:58,361 main org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6e3c1e69
+DEBUG 2020 九月 16 11:39:58,593 main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\project\idea\blog\blog-service\target\classes\com\ph\listener\AppListener.class]
+DEBUG 2020 九月 16 11:39:58,596 main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\project\idea\blog\blog-service\target\classes\com\ph\service\UserService.class]
+DEBUG 2020 九月 16 11:39:58,619 main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 8 bean definitions from class path resource [applicationContext.xml]
+DEBUG 2020 九月 16 11:39:58,641 main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG 2020 九月 16 11:39:58,695 main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+DEBUG 2020 九月 16 11:39:58,696 main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+DEBUG 2020 九月 16 11:39:58,699 main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG 2020 九月 16 11:39:58,700 main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG 2020 九月 16 11:39:58,704 main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+DEBUG 2020 九月 16 11:39:58,770 main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'appListener'
+DEBUG 2020 九月 16 11:39:58,780 main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userService'
+INFO 2020 九月 16 11:39:58,793 main com.ph.service.UserService - 1进行登录

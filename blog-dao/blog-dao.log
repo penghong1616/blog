@@ -1,0 +1,105 @@
+DEBUG 2020 九月 17 16:38:43,604 main org.hibernate.secure.spi.JaccIntegrator - Skipping JACC integration as it was not enabled
+DEBUG 2020 九月 17 16:38:43,605 main org.hibernate.internal.SessionFactoryImpl - Instantiated session factory
+DEBUG 2020 九月 17 16:38:43,605 main org.hibernate.type.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@77e2a6e2] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@173373b4]
+DEBUG 2020 九月 17 16:38:43,654 main org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.ph.pojo.User] is safe
+DEBUG 2020 九月 17 16:38:43,654 main org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.ph.pojo.User
+DEBUG 2020 九月 17 16:38:43,671 main org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.ph.pojo.User] is safe
+DEBUG 2020 九月 17 16:38:43,672 main org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.ph.pojo.User
+DEBUG 2020 九月 17 16:38:43,853 main org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.ph.pojo.User
+DEBUG 2020 九月 17 16:38:43,853 main org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select id from User where id =?
+DEBUG 2020 九月 17 16:38:43,853 main org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select user_.id, user_.userName as userName2_0_ from User user_ where user_.id=?
+DEBUG 2020 九月 17 16:38:43,853 main org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into User (userName, id) values (?, ?)
+DEBUG 2020 九月 17 16:38:43,853 main org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update User set userName=? where id=?
+DEBUG 2020 九月 17 16:38:43,853 main org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from User where id=?
+DEBUG 2020 九月 17 16:38:43,871 main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6a48a7f3]
+DEBUG 2020 九月 17 16:38:43,872 main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : userName
+DEBUG 2020 九月 17 16:38:43,872 main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG 2020 九月 17 16:38:43,882 main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG 2020 九月 17 16:38:43,885 main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.ph.pojo.User)
+    - Returns
+       - EntityReturnImpl(entity=com.ph.pojo.User, querySpaceUid=<gen:0>, path=com.ph.pojo.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ph.pojo.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+DEBUG 2020 九月 17 16:38:43,886 main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.ph.pojo.User [NONE]: select user0_.id as id1_0_0_, user0_.userName as userName2_0_0_ from User user0_ where user0_.id=?
+DEBUG 2020 九月 17 16:38:43,887 main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@129bd55d]
+DEBUG 2020 九月 17 16:38:43,887 main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : userName
+DEBUG 2020 九月 17 16:38:43,887 main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG 2020 九月 17 16:38:43,887 main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG 2020 九月 17 16:38:43,887 main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.ph.pojo.User)
+    - Returns
+       - EntityReturnImpl(entity=com.ph.pojo.User, querySpaceUid=<gen:0>, path=com.ph.pojo.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ph.pojo.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+DEBUG 2020 九月 17 16:38:43,887 main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.ph.pojo.User [READ]: select user0_.id as id1_0_0_, user0_.userName as userName2_0_0_ from User user0_ where user0_.id=?
+DEBUG 2020 九月 17 16:38:43,933 main org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity com.ph.pojo.User: select user0_.id as id1_0_0_, user0_.userName as userName2_0_0_ from User user0_ where user0_.id=?
+DEBUG 2020 九月 17 16:38:43,933 main org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity com.ph.pojo.User: select user0_.id as id1_0_0_, user0_.userName as userName2_0_0_ from User user0_ where user0_.id=?
+DEBUG 2020 九月 17 16:38:43,970 main org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://master:3306/blog]
+DEBUG 2020 九月 17 16:38:44,185 main org.hibernate.mapping.Table - No alter strings for table : hibernate_sequence
+DEBUG 2020 九月 17 16:38:44,185 main org.hibernate.SQL - 
+    
+    create table User (
+       id integer not null,
+        userName varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+DEBUG 2020 九月 17 16:38:44,241 main org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+DEBUG 2020 九月 17 16:38:44,241 main org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+DEBUG 2020 九月 17 16:38:44,249 main org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO 2020 九月 17 16:38:44,250 main org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+DEBUG 2020 九月 17 16:38:44,251 main org.hibernate.query.spi.NamedQueryRepository - Checking 0 named HQL queries
+DEBUG 2020 九月 17 16:38:44,251 main org.hibernate.query.spi.NamedQueryRepository - Checking 0 named SQL queries
+DEBUG 2020 九月 17 16:38:44,258 main org.hibernate.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@ebd06a9
+DEBUG 2020 九月 17 16:38:44,259 main org.hibernate.internal.SessionFactoryRegistry - Registering SessionFactory: 4349674e-c8fd-4e75-b60f-034633bbd37f (<unnamed>)
+DEBUG 2020 九月 17 16:38:44,259 main org.hibernate.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+DEBUG 2020 九月 17 16:38:44,293 main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'txAdvice'
+DEBUG 2020 九月 17 16:38:44,295 main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'transactionManager'
+DEBUG 2020 九月 17 16:38:44,313 main org.springframework.orm.hibernate5.HibernateTransactionManager - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@5ba3f27a] of Hibernate SessionFactory for HibernateTransactionManager
+DEBUG 2020 九月 17 16:38:44,324 main org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [find*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+DEBUG 2020 九月 17 16:38:44,324 main org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+DEBUG 2020 九月 17 16:38:44,414 main org.springframework.orm.hibernate5.HibernateTransactionManager - Creating new transaction with name [com.ph.dao.UserDao.saveUser]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+DEBUG 2020 九月 17 16:38:44,457 main org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+DEBUG 2020 九月 17 16:38:44,460 main org.springframework.orm.hibernate5.HibernateTransactionManager - Opened new Session [SessionImpl(2101326063<open>)] for Hibernate transaction
+DEBUG 2020 九月 17 16:38:44,463 main org.hibernate.engine.transaction.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+DEBUG 2020 九月 17 16:38:44,463 main org.hibernate.engine.transaction.internal.TransactionImpl - begin
+DEBUG 2020 九月 17 16:38:44,463 main org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://master:3306/blog]
+DEBUG 2020 九月 17 16:38:45,648 main org.springframework.orm.hibernate5.HibernateTransactionManager - Exposing Hibernate transaction as JDBC [org.springframework.orm.hibernate5.HibernateTransactionManager$$Lambda$114/1967434886@3b27b497]
+DEBUG 2020 九月 17 16:38:45,662 main org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://master:3306/blog]
+DEBUG 2020 九月 17 16:38:45,828 main org.hibernate.SQL - 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+DEBUG 2020 九月 17 16:38:45,842 main org.hibernate.SQL - 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+DEBUG 2020 九月 17 16:38:45,893 main org.hibernate.event.internal.AbstractSaveEventListener - Generated identifier: 4, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+DEBUG 2020 九月 17 16:38:45,902 main org.springframework.orm.hibernate5.HibernateTransactionManager - Initiating transaction commit
+DEBUG 2020 九月 17 16:38:45,903 main org.springframework.orm.hibernate5.HibernateTransactionManager - Committing Hibernate transaction on Session [SessionImpl(2101326063<open>)]
+DEBUG 2020 九月 17 16:38:45,903 main org.hibernate.engine.transaction.internal.TransactionImpl - committing
+DEBUG 2020 九月 17 16:38:45,903 main org.hibernate.event.internal.AbstractFlushingEventListener - Processing flush-time cascades
+DEBUG 2020 九月 17 16:38:45,904 main org.hibernate.event.internal.AbstractFlushingEventListener - Dirty checking collections
+DEBUG 2020 九月 17 16:38:45,906 main org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 1 objects
+DEBUG 2020 九月 17 16:38:45,907 main org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG 2020 九月 17 16:38:45,907 main org.hibernate.internal.util.EntityPrinter - Listing entities:
+DEBUG 2020 九月 17 16:38:45,907 main org.hibernate.internal.util.EntityPrinter - com.ph.pojo.User{id=4, userName=penghong}
+DEBUG 2020 九月 17 16:38:45,911 main org.hibernate.SQL - 
+    insert 
+    into
+        User
+        (userName, id) 
+    values
+        (?, ?)
+DEBUG 2020 九月 17 16:38:45,983 main org.springframework.orm.hibernate5.HibernateTransactionManager - Closing Hibernate Session [SessionImpl(2101326063<open>)] after transaction
